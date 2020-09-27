@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>About This Project</title>
+<link rel="stylesheet" type="text/css" href= '{%  static "css/style.css" %}'>
+</head>
+
+<h1>About Arman Nadjarian's Text Analyzer website:</h1>
+
+<h2>Hello, welcome to my About Page: </h2>
+
+<p>This text analyzer project started as a guided tutorial in my Django Certification course.
+This website began as an exercise in webpage construction and the introduction of basic algorithms via Django.
+Upon completion of this project, I decided to further improve upon it through various stylistic improvements (via implementation of CSS)
+and the addition of vowel/consonant counting. </p>
+
+<p>Thanks for stopping by!</p>
+<a href = "{% url 'home' %}">To Go Home</a>
+
+</html>

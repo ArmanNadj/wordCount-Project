@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Text Analysis</title>
+<link rel="stylesheet" type="text/css" href='{%  static "css/style.css" %}'>
+</head>
+
+<a href = "{%url 'home'%}">Start Over</a>
+<h1>There are {{count}} words in this block of text</h1>
+
+<p><b>Your Text: </b></p>
+
+{{fullText}}
+
+
+<h2>List of words and their counts: </h2>
+{% for key, total in Dictionary %}
+<b>{{key}} :: {{total}}</b>
+<br/>
+{% endfor %}
+
+<h1>--------------------------------------------------------------------------------------------------</h1>
+<p><b>Vowel Count:</b> {{vowels}}</p>
+<p><b>Consonant Count:</b> {{consonants}}</p>
+<p><b>Symbols Count:</b> {{symbols}}</p>
+<p><b>Most used word with it's count:</b> {{most_used_word}} with a count of {{most_used_count}}</p>
+<h1>--------------------------------------------------------------------------------------------------</h1>
+<a href = "{% url 'home' %}">To Go Home</a>
+<a href = "{% url 'about' %}">About This Project</a>
+
+</html>

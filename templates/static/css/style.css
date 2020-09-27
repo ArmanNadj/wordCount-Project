@@ -1,0 +1,35 @@
+* {
+  background-color: silver;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+  text-align: center;
+}
+
+
+
+h1 {
+  text-align: center;
+
+}
+
+b {
+  text-decoration: underline;
+}
+
+textarea{
+border-color: black;
+border-radius: 5px;
+text-align: left;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: blue;
+}
+
+input {
+  border-width: 5px;
+  border-inline-start-color: black;
+  width: 80px;
+  height: 30px;
+}
